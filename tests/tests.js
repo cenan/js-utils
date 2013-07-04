@@ -1,7 +1,3 @@
-function define(deps, mod) {
-    window.Utils = mod();
-}
-
 test( "slugify", function() {
     equal(Utils.slugify(undefined), undefined, "Should handle non-string arguments");
     equal(Utils.slugify(123), 123, "Should handle non-string arguments");
