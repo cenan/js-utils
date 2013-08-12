@@ -24,6 +24,9 @@
             jQuery('link[rel="stylesheet"]').each(function () {
                 this.href = this.href.replace(/\?.*|$/, queryString);
             });
+        },
+        randomColor: function () {
+            return "#" + Math.random().toString(16).slice(-6);
         }
     };
 
